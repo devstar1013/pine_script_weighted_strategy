@@ -633,27 +633,32 @@ plot(FLAG_VISIBLE ? MACD:na, 'MACD', color=color.new(color.blue, 0), display=dis
 plot(FLAG_VISIBLE ? signal:na, 'Signal', color=color.new(color.orange, 0), display=display.none)
 plotshape(long_signal1 and FLAG_SIGNALS and FLAG_VISIBLE ? up : na, 'Buy MACD', text='MACD', location=location.absolute, style=shape.labelup, size=size.tiny, color=color.new(color.teal, 0), textcolor=color.new(color.white, 0), display=display.none)
 plotshape(short_signal1 and FLAG_SIGNALS and FLAG_VISIBLE ? dn : na, 'Sell MACD', text='MACD', location=location.absolute, style=shape.labeldown, size=size.tiny, color=color.new(color.gray, 0), textcolor=color.new(color.white, 0), display=display.none)
+
 // *************************************************************************************************************************************************************************************************************************************************************************
 // * strategy 2: Stoch RSI
 // *************************************************************************************************************************************************************************************************************************************************************************
 plotshape(long_signal2 and FLAG_SIGNALS and FLAG_VISIBLE ? up : na, title='Buy Stoch RSI', text='SRSI', location=location.absolute, style=shape.labelup, size=size.tiny, color=color.new(color.teal, 0), textcolor=color.new(color.white, 0), display=display.none)
 plotshape(short_signal2 and FLAG_SIGNALS and FLAG_VISIBLE ? dn : na, title='Sell Stoch RSI', text='SRSI', location=location.absolute, style=shape.labeldown, size=size.tiny, color=color.new(color.gray, 0), textcolor=color.new(color.white, 0), display=display.none)
 // *************************************************************************************************************************************************************************************************************************************************************************
+
 // * strategy 3: RSI
 // *************************************************************************************************************************************************************************************************************************************************************************
 plotshape(long_signal3 and FLAG_SIGNALS and FLAG_VISIBLE ? up : na, title='Buy RSI', text='RSI', location=location.absolute, style=shape.labelup, size=size.tiny, color=color.new(color.teal, 0), textcolor=color.new(color.white, 0), display=display.none)
 plotshape(short_signal3 and FLAG_SIGNALS and FLAG_VISIBLE ? dn : na, title='Sell RSI', text='RSI', location=location.absolute, style=shape.labeldown, size=size.tiny, color=color.new(color.gray, 0), textcolor=color.new(color.white, 0), display=display.none)
 // *************************************************************************************************************************************************************************************************************************************************************************
+
 // * strategy 4: Supertrend
 // *************************************************************************************************************************************************************************************************************************************************************************
 plotshape(long_signal4 and FLAG_SIGNALS and FLAG_VISIBLE ? up : na, title='Buy Supertrend', text='Supertrend', location=location.absolute, style=shape.labelup, size=size.tiny, color=color.new(color.teal, 0), textcolor=color.new(color.white, 0), display=display.none)
 plotshape(short_signal4 and FLAG_SIGNALS and FLAG_VISIBLE ? dn : na, title='Sell Supertrend', text='Supertrend', location=location.absolute, style=shape.labeldown, size=size.tiny, color=color.new(color.gray, 0), textcolor=color.new(color.white, 0), display=display.none)
 // *************************************************************************************************************************************************************************************************************************************************************************
+
 // * strategy 5: MA CROSS
 // *************************************************************************************************************************************************************************************************************************************************************************
 plotshape(long_signal5 and FLAG_SIGNALS and FLAG_VISIBLE ? up : na, title='Buy MA CROSS', text='MA CROSS', location=location.absolute, style=shape.labelup, size=size.tiny, color=color.new(color.teal, 0), textcolor=color.new(color.white, 0), display=display.none)
 plotshape(short_signal5 and FLAG_SIGNALS and FLAG_VISIBLE ? dn : na, title='Sell MA CROSS', text='MA CROSS', location=location.absolute, style=shape.labeldown, size=size.tiny, color=color.new(color.gray, 0), textcolor=color.new(color.white, 0), display=display.none)
 // *************************************************************************************************************************************************************************************************************************************************************************
+
 // * STRATEGY 6: POTENTIAL TOP/BOTTOM
 // *************************************************************************************************************************************************************************************************************************************************************************
 plotshape(condition_OB_several and FLAG_VISIBLE ? dn : na, title='Top', text='T', location=location.abovebar, style=shape.labeldown, size=size.tiny, color=color.new(color.teal, 0), textcolor=color.new(color.white, 0))
