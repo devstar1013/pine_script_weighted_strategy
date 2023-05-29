@@ -622,6 +622,7 @@ plotchar(strategy.grossloss, "Gross loss [$]", "", location.top, size = size.tin
 plotchar(strategy.openprofit, "Unrealized P&L [$]", "", location.top, size = size.tiny, color=strategy.openprofit > 0 ? color.blue : color.gray)
 plotchar(strategy.closedtrades, "Closed trades", "", location.top, size = size.tiny, color=color.orange) 
 plotchar(strategy.wintrades/strategy.closedtrades*100, "Winrate [%]", "", location.top, size = size.tiny, color=strategy.wintrades/strategy.closedtrades > 60 ? color.blue : color.gray) 
+
 // *************************************************************************************************************************************************************************************************************************************************************************
 // PLOTS
 // *************************************************************************************************************************************************************************************************************************************************************************
@@ -758,7 +759,6 @@ if show_performance and FLAG_VISIBLE
         table.cell(monthly_table, 11, 0, "Nov",  bgcolor = #cccccc)
         table.cell(monthly_table, 12, 0, "Dec",  bgcolor = #cccccc)
         table.cell(monthly_table, 13, 0, "Year", bgcolor = #999999)
-    
     
         for yi = 0 to array.size(year_pnl) - 1
             table.cell(monthly_table, 0,  yi + 1, str.tostring(year(array.get(year_time, yi))), bgcolor = #cccccc)
