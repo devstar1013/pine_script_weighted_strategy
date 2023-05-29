@@ -12,7 +12,7 @@ This project is on hold until further news. The idea is to take it up again when
 
 Best,
 
-Alberto
+Vstalii
 
 ---
 
@@ -106,20 +106,3 @@ If you consider paying for a subscription on TradingView (which is not required 
 
 `Original post:` https://www.tradingview.com/script/OF3TzrNS-Acrypto-Weighted-Strategy/
 
-## Acknowledgements
-The monthly table performance was developed by @QuantNomad. I have only changed some colors and also adapted the calculations to the last previous candle. The purpose of this change is to make this script compatible with this weighted strategy. Thanks again to @QuantNomad for this amazing script!
-
-## Questions?
-For discussions, questions, or just to share some settings, please leave a comment here in the [discussion channel](https://github.com/AlbertoCuadra/algo_trading_weighted_strategy/discussions).
-
-
-## Developer
-
-* **[Alberto Cuadra-Lara](https://acuadralara.com/)** 
-
-
-Support this project by giving me an extra dose of caffeine :coffee: 
-
-<a href="https://www.buymeacoffee.com/acuadra" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
