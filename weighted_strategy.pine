@@ -664,6 +664,7 @@ plotshape(short_signal5 and FLAG_SIGNALS and FLAG_VISIBLE ? dn : na, title='Sell
 plotshape(condition_OB_several and FLAG_VISIBLE ? dn : na, title='Top', text='T', location=location.abovebar, style=shape.labeldown, size=size.tiny, color=color.new(color.teal, 0), textcolor=color.new(color.white, 0))
 plotshape(condition_OS_several and FLAG_VISIBLE ? up : na, title='Bottom', text='B', location=location.belowbar, style=shape.labelup, size=size.tiny, color=color.new(color.teal, 0), textcolor=color.new(color.white, 0))
 // *************************************************************************************************************************************************************************************************************************************************************************
+
 // * Buy/Sell signals
 // *************************************************************************************************************************************************************************************************************************************************************************
 w_total_long = weight_total(long_signal1, long_signal2, long_signal3, long_signal4, long_signal5)
@@ -671,11 +672,13 @@ w_total_short = weight_total(short_signal1, short_signal2, short_signal3, short_
 plotshape(w_total_long >= weight_trigger and FLAG_SIGNALS and FLAG_VISIBLE ? up : na, title='Buy Weigthed strategy', text='Buy', location=location.absolute, style=shape.labelup, size=size.tiny, color=color.new(color.teal, 0), textcolor=color.new(color.white, 0))
 plotshape(w_total_short >= weight_trigger and FLAG_SIGNALS and FLAG_VISIBLE ? dn : na, title='Sell Weigthed strategy', text='Sell', location=location.absolute, style=shape.labeldown, size=size.tiny, color=color.new(color.gray, 0), textcolor=color.new(color.white, 0))
 // *************************************************************************************************************************************************************************************************************************************************************************
+
 // * Stop loss targets
 // *************************************************************************************************************************************************************************************************************************************************************************
 plot(series=(strategy.position_size > 0) and FLAG_VISIBLE ? price_stop_long : na, color=color.new(color.gray, 30), style=plot.style_cross, linewidth=2, title="Long Stop Loss")
 plot(series=(strategy.position_size < 0) and FLAG_VISIBLE ? price_stop_short : na, color=color.new(color.gray, 30), style=plot.style_cross, linewidth=2, title="Short Stop Loss")
 // *************************************************************************************************************************************************************************************************************************************************************************
+
 // * TP targets
 // *************************************************************************************************************************************************************************************************************************************************************************
 plot(strategy.position_size > 0 or strategy.position_size < 0 and FLAG_VISIBLE ? nextTP : na, color=color.new(color.aqua, 30), style=plot.style_cross, linewidth=2, title="Next TP")
